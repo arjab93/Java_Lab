@@ -1,0 +1,117 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--  <meta charset="ISO-8859-1">-->
+<!--  <title>Insert title here</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<form method="post" action="HelloServlet">-->
+<!--        <pre>-->
+<!--            Enter your name: <input type="text" name="name">-->
+<!--            Enter your email: <input type="text" name="email">-->
+<!--            Select your country:-->
+<!--            <select name="country">-->
+<!--                <option value="USA">USA</option>-->
+<!--                <option value="Canada">Canada</option>-->
+<!--                <option value="UK">UK</option>-->
+<!--              &lt;!&ndash; Add more countries as needed &ndash;&gt;-->
+<!--            </select>-->
+<!--            Enter your password: <input type="password" name="password">-->
+<!--            <input type="submit"> <input type="reset">-->
+<!--        </pre>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            max-width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            white-space: pre-wrap;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        select {
+            appearance: none;
+            padding: 8px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<form method="post" action="HelloServlet">
+        <pre>
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Enter your email:</label>
+            <input type="text" name="email" id="email">
+
+            <label for="country">Select your country:</label>
+            <select name="country">
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+            </select>
+
+            <label for="password">Enter your password:</label>
+            <input type="password" name="password" id="password">
+
+            <input type="submit"> <input type="reset">
+        </pre>
+</form>
+
+</body>
+</html>
